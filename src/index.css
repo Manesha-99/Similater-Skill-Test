@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+    outline: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e1e;
+}
+
+@layer components {
+    .cta-btn {
+        @apply rounded-full bg-primary-dark px-6 py-2 text-sm capitalize text-white hover:bg-gray-500;
+    }
+
+    .custom-transision {
+        @apply transition-all duration-300 ease-in-out;
+    }
+}
