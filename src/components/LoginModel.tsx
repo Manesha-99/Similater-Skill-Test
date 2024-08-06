@@ -3,11 +3,11 @@ import { IoClose } from 'react-icons/io5'
 import { useAuth } from '../context/authContext'
 import { toast } from 'react-toastify'
 
-type LoginModalProps = {
+type LoginModelProps = {
     onClose: () => void
 }
 
-const LoginModel: React.FC<LoginModalProps> = ({ onClose }) => {
+const LoginModel: React.FC<LoginModelProps> = ({ onClose }) => {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const [showPassword, setShowPassword] = useState<boolean>(false)
